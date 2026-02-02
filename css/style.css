@@ -16,6 +16,7 @@ header {
   background: #000;
   color: #fff;
   padding: 50px 20px;
+   position: relative; 
 }
 
 main {
@@ -29,7 +30,7 @@ main {
 ========================= */
 h1 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 h2 {
