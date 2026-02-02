@@ -19,7 +19,7 @@ header {
   width: 100%;
   background: #000;
   color: #fff;
-  padding: 50px 20px;
+  padding: 60px 20px;
    position: relative; 
 }
 
@@ -27,6 +27,7 @@ main {
   flex: 1;
   margin-top: 20px;
   padding: 0 20px;
+  padding-top: 170px;
 }
 
 /* =========================
@@ -34,7 +35,7 @@ main {
 ========================= */
 h1 {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h2 {
@@ -44,10 +45,15 @@ h2 {
 /* =========================
    円弧メニュー
 ========================= */
-.arc-menu {
+
+header {
   position: fixed;
+}
+
+.arc-menu {
+  position: absolute;
   top: 0;
-  right: 0;
+  right: 30px;
   width: 200px;
   height: 200px;
   transform-origin: top right;
@@ -63,6 +69,18 @@ h2 {
   color: #fff;
  font-weight: 700;
  font-size: 2rem;
+}
+
+
+@media (max-width: 600px) {
+  header {
+    padding: 12px;
+  }
+
+  .arc-menu {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 
