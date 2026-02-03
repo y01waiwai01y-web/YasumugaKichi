@@ -12,31 +12,48 @@ body {
 /* =========================
    ヘッダー・本文
 ========================= */
-header {
+.site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  z-index: 1000;
+}
+
+.header-inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   background: #000;
   color: #fff;
-  padding: 60px 20px;
-   position: relative; 
+  padding: 24px 24px 2px;
+  min-height: 160px;
+}
+
+.site-title {
+  margin: 0;
+  font-size: 2.2rem;
+  z-index: 2;
 }
 
 main {
   flex: 1;
-  margin-top: 20px;
-  padding: 0 20px;
-  padding-top: 170px;
+  padding: 24px;
+  margin-top: 180px;
+  
 }
+
+.updates {
+  padding: 20px;
+}
+
+
 
 /* =========================
    見出し
 ========================= */
-h1 {
-  margin: 0;
-  font-size: 2.2rem;
-}
+
 
 h2 {
   margin-bottom: 20px;
@@ -46,17 +63,12 @@ h2 {
    円弧メニュー
 ========================= */
 
-header {
-  position: fixed;
-}
-
 .arc-menu {
-  position: absolute;
-  top: 0;
-  right: 30px;
-  width: 200px;
-  height: 200px;
-  transform-origin: top right;
+  position: relative;
+  
+  width: 180px;
+  height: 180px;
+ 
 }
 
 .menu-item {
@@ -64,22 +76,33 @@ header {
   top: 0;
   right: 0;
   transform-origin: top right;
-  transform: rotate(var(--angle)) translateX(-100px);
+  transform: rotate(var(--angle)) translateX(-90px);
   text-decoration: none;
   color: #fff;
  font-weight: 700;
- font-size: 2rem;
+ font-size: 1.6rem;
 }
 
 
+/*スマホ用*/
+
 @media (max-width: 600px) {
-  header {
-    padding: 12px;
+  .header-inner {
+    padding: 16px;
+    min-height: 120px;
   }
 
   .arc-menu {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
+  }
+  .menu-item {
+    font-size: 1.2rem;
+    transform: rotate(var(--angle)) translateX(-70px);
+  }
+
+  main {
+    margin-top: 140px;
   }
 }
 
