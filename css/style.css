@@ -89,7 +89,7 @@ h2 {
 @media (max-width: 600px) {
   .header-inner {
     padding: 16px;
-    min-height: 250px;
+    min-height: 120px;
   }
 
   .arc-menu {
