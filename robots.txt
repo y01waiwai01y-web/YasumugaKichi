@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yasumu-ga-kichi.pages.dev/sitemap.xml
