@@ -211,3 +211,8 @@ h2 {
     font-size: 16px;
   }
 }
+
+/*太字設定*/
+.bold {
+  font-weight: 700;
+}
