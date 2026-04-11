@@ -225,3 +225,17 @@ main + main {
   padding-top: 0;
 }
 /* ...existing code... */
+
+/*blogヘッダーで飛べるやつ*/
+.site-title a {
+  color: inherit;          /* 親の文字色をそのまま使う */
+  text-decoration: none;   /* 下線を消す */
+}
+
+.site-title a:visited {
+  color: inherit;          /* 訪問済みでも色変えない */
+}
+/*カーソルで薄くなるやつ*/
+.site-title a:hover {
+  opacity: 0.7;
+}
